@@ -1,0 +1,1159 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap'
+);
+
+
+/* =========================
+   DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    background: #170711;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HILANG
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+.lock-screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #521535,
+            #220815 50%,
+            #0e0309
+        );
+}
+
+
+.lock-box {
+
+    width: 420px;
+
+    max-width: 100%;
+
+    text-align: center;
+
+    padding: 45px 30px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(60, 10, 37, .85);
+
+    border:
+        1px solid
+        rgba(255, 170, 210, .2);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.5);
+
+}
+
+
+.flower {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+    animation:
+        float 3s infinite;
+}
+
+
+.small-text {
+
+    color: #f4a5c7;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.lock-box h1 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+.description {
+
+    color: #d8b9c8;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+
+.lock-box input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid #713650;
+
+    background: #190611;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.lock-box button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ed5599,
+            #a51d5d
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#error {
+
+    color: #ff8bb8;
+
+    margin-top: 12px;
+
+    min-height: 20px;
+
+}
+
+
+.lock-box small {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #957083;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #501332,
+            #26091b 45%,
+            #14050c
+        );
+
+    position: relative;
+
+}
+
+
+.hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.subtitle {
+
+    color: #f09bc1;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.hero h1 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:
+        clamp(65px, 11vw, 120px);
+
+    line-height: .85;
+
+    margin: 25px 0;
+
+}
+
+
+.hero h1 span {
+
+    color: #f19ac2;
+
+}
+
+
+.hero-description {
+
+    color: #d9b8c8;
+
+    max-width: 550px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+.cake {
+
+    font-size: 80px;
+
+    margin: 25px;
+
+    animation:
+        float 3s infinite;
+
+}
+
+
+.main-button {
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ed5599,
+            #a51d5d
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.main-button:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(237,85,153,.3);
+
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+.title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+.title p {
+
+    color: #ef91ba;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.title h2 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:
+        clamp(40px, 7vw, 65px);
+
+    margin: 15px 0;
+
+}
+
+
+.title span {
+
+    color: #cdaebe;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter-section {
+
+    padding: 110px 20px;
+
+    background:
+        linear-gradient(
+            #170711,
+            #250a19
+        );
+
+}
+
+
+.letter {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    background: #fffafd;
+
+    color: #5b3c4b;
+
+    box-shadow:
+        0 30px 70px
+        rgba(0,0,0,.4);
+
+}
+
+
+.flower-top {
+
+    font-size: 45px;
+
+}
+
+
+.letter h3 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    color: #681b45;
+
+    font-size: 35px;
+
+    margin: 15px 0;
+
+}
+
+
+.letter p {
+
+    line-height: 1.9;
+
+    font-size: 14px;
+
+    margin: 15px 0;
+
+}
+
+
+.letter h4 {
+
+    color: #d9347b;
+
+    font-size: 20px;
+
+    margin-top: 25px;
+
+}
+
+
+.signature {
+
+    margin-top: 25px;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-style: italic;
+
+    color: #9d7186;
+
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+
+    padding: 110px 20px;
+
+    background: #1c0712;
+
+}
+
+
+.gallery {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.photo {
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #2b0b1d;
+
+    border:
+        1px solid #54213c;
+
+    transition: .4s;
+
+}
+
+
+.photo:hover {
+
+    transform:
+        translateY(-10px)
+        rotate(-1deg);
+
+}
+
+
+.photo img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.photo p {
+
+    text-align: center;
+
+    padding: 16px;
+
+    color: #f2d4e2;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.story-section {
+
+    padding: 110px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #3d0e29,
+            #170711 65%
+        );
+
+}
+
+
+.timeline {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    position: relative;
+
+}
+
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            transparent,
+            #dc659d,
+            transparent
+        );
+
+}
+
+
+.timeline-item {
+
+    width: 50%;
+
+    position: relative;
+
+    padding: 15px 45px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.timeline-item.left {
+
+    left: 0;
+
+    text-align: right;
+
+}
+
+
+.timeline-item.right {
+
+    left: 50%;
+
+}
+
+
+.dot {
+
+    position: absolute;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #2c0a1d;
+
+    border:
+        2px solid #e170a5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    top: 25px;
+
+    z-index: 2;
+
+}
+
+
+.left .dot {
+
+    right: -22px;
+
+}
+
+
+.right .dot {
+
+    left: -22px;
+
+}
+
+
+.story-card {
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid
+        rgba(255,180,215,.15);
+
+}
+
+
+.story-card span {
+
+    color: #ef94bc;
+
+    font-size: 11px;
+
+}
+
+
+.story-card h3 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 28px;
+
+    margin: 10px 0;
+
+}
+
+
+.story-card p {
+
+    color: #cdb1bf;
+
+    line-height: 1.7;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   ALASAN
+========================= */
+
+.reason-section {
+
+    padding: 110px 20px;
+
+    background: #230918;
+
+}
+
+
+.reason-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.reason {
+
+    text-align: center;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid
+        rgba(255,180,215,.12);
+
+}
+
+
+.reason div {
+
+    font-size: 45px;
+
+}
+
+
+.reason h3 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 28px;
+
+    margin: 15px 0;
+
+}
+
+
+.reason p {
+
+    color: #cdb1bf;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================
+   ENDING
+========================= */
+
+.ending {
+
+    min-height: 100vh;
+
+    padding: 100px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #501332,
+            #170711 65%
+        );
+
+}
+
+
+.big-heart {
+
+    font-size: 90px;
+
+    animation:
+        heartbeat 1.5s infinite;
+
+}
+
+
+.ending p {
+
+    color: #ef91ba;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.ending h2 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:
+        clamp(40px, 7vw, 70px);
+
+    margin: 20px 0 30px;
+
+}
+
+
+.final-card {
+
+    max-width: 570px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #fffafd;
+
+    color: #5b3c4b;
+
+    border-radius: 20px;
+
+}
+
+
+.final-card p {
+
+    color: #5b3c4b;
+
+    font-size: 14px;
+
+    letter-spacing: 0;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+
+}
+
+
+.final-card strong {
+
+    color: #d9347b;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #10040a;
+
+    color: #856073;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================
+   MUSIK
+========================= */
+
+#musicButton {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 1px solid #9e416d;
+
+    background: #2c0a1d;
+
+    color: #ffafd0;
+
+    font-size: 20px;
+
+    z-index: 100;
+
+}
+
+
+/* =========================
+   REVEAL
+========================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform:
+        translateY(50px);
+
+    transition:
+        .8s ease;
+
+}
+
+
+.reveal.show {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes float {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-12px);
+
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+
+        transform:
+            scale(1);
+
+    }
+
+    25% {
+
+        transform:
+            scale(1.15);
+
+    }
+
+    50% {
+
+        transform:
+            scale(1);
+
+    }
+
+    75% {
+
+        transform:
+            scale(1.15);
+
+    }
+
+}
+
+
+/* =========================
+   PARTIKEL
+========================= */
+
+.particle {
+
+    position: fixed;
+
+    top: -30px;
+
+    z-index: 50;
+
+    pointer-events: none;
+
+    animation:
+        jatuh linear forwards;
+
+}
+
+
+@keyframes jatuh {
+
+    from {
+
+        transform:
+            translateY(-30px)
+            rotate(0deg);
+
+        opacity: .8;
+
+    }
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media(max-width: 700px) {
+
+    .gallery,
+    .reason-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .timeline::before {
+
+        left: 20px;
+
+    }
+
+
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+
+        width: 100%;
+
+        left: 0;
+
+        text-align: left;
+
+        padding-left: 60px;
+
+        padding-right: 0;
+
+    }
+
+
+    .left .dot,
+    .right .dot {
+
+        left: -2px;
+
+        right: auto;
+
+    }
+
+
+    .letter {
+
+        padding: 30px 22px;
+
+    }
+
+}
