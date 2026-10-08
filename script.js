@@ -2,7 +2,7 @@
    PASSWORD
 ========================= */
 
-const PASSWORD = "1234";
+const PASSWORD = "290108";
 
 
 function checkPassword() {
